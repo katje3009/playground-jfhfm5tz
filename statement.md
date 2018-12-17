@@ -12,7 +12,18 @@ class Hello
     {
 // }
 
-Console.WriteLine("Hello World!");
+        Console.WriteLine("Hello World!");
+        
+        string value = string.Empty;
+        Random rand = new Random();
+            
+        for(int i = 0; i < 100; i++)
+        {
+            int newValue = rand.Next(0,i);
+            value += ";" + newValue.ToString();
+        }
+        
+        Console.WriteLine(value);
 
 // { autofold
     }
